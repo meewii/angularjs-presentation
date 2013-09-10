@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AngularJS, example 2</title>
+
+    <!-- AngularJS File -->
+    <script src="http://code.angularjs.org/1.0.7/angular.js"></script>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- Your own CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- Your own Angular files -->
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+    
+    <div ng-controller="Example4Ctrl" class="container">
+
+      <form class="form-signin">
+        <ul>
+            <li ng-repeat="pilot in pilots">
+                <strong>{{ pilot.codename}}</strong> &middot {{ pilot.firstname }} {{ pilot.lastname }}
+            </li>
+        </ul>
+
+      </form>
+
+    </div>
+
+</body>
+</html>

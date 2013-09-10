@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MVC demo</title>
+
+    <script>
+        // Model
+        var myModel = 'Guten Tag Berlin!';
+
+        
+        //Controller
+        function changeTitle() {
+            document.getElementById('title').innerHTML = myModel;
+        }
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    
+    <!-- View -->
+    <div class="container example-0">
+        <div class="form-signin">
+            <h1 id="title">Bonjour Paris</h1>
+            <button onclick="changeTitle();">Change title</button>
+        </div>
+    </div>
+
+</body>
+</html>
