@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MVC demo</title>
+
+    <script>
+        var g = "global";
+        function read() { 
+            var l = "local";
+            alert(l); // throws a reference error
+        }
+        alert(l); // throws a reference error
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    
+    <!-- View -->
+    <div class="container example-0">
+        <div class="form-signin">
+            <button onclick="read();">Alert</button>
+        </div>
+    </div>
+
+</body>
+</html>
